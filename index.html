@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Naufal & Annisa Wedding</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Sacramento&display=swap"
+    />
+
+    <!-- Bootstrap Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Countdown -->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <script src="countdown/simplyCountdown.umd.js"></script>
+
+    <!-- my Style CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section id="hero" class="hero w-100 h-100 p-3 mx-auto d-flex text-white">
+      <main>
+        <h4>Kepada Bapak/Ibu/Saudara(i),</h4>
+        <h1>Naufal & Annisa</h1>
+        <p>Akan melangsungkan resepsi pernikahan dalam:</p>
+        <div class="countdown simply-countdown"></div>
+        <a href="#home" class="btn btn-lg" onclick="enableScroll()"
+          >Buka Undangan</a
+        >
+      </main>
+    </section>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md bg-transparent sticky-top mynavbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">Naufal & Annisa</a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Naufal & Annisa
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#story">Story</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#rsvp">Reservasi</a>
+              <a class="nav-link" href="#gift">Gifts</a>
+              <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home -->
+    <section class="home" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8"></div>
+          <h2>Acara Pernikahan</h2>
+          <h3>
+            Diselenggarakan pada 28 January 2026 di Makassar, Sulawesi Selatan
+          </h3>
+          <p>
+            Oleh karena itu, dengan segala hormat, kami bermaksud mengundang
+            Bapak/Ibu, Saudara/i, untuk hadir dalam Acara Pernikahan kami.
+          </p>
+        </div>
+
+        <div class="row couple">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-8 text-end">
+                <h3>Muhammad Naufal</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dignissimos velit nemo minus.
+                </p>
+                <p>
+                  Putra dari Ustadz Ba'ba <br />
+                  & <br />
+                  Ibu Tini
+                </p>
+              </div>
+              <div class="col-4">
+                <img src="img/gambar12.jpeg" alt="Naufal" class="imgGirl" />
+              </div>
+            </div>
+          </div>
+
+          <span class="heart"><i class="bi bi-heart-fill"></i></span>
+
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-4">
+                <img src="img/gambar13.jpeg" alt="Annisa" class="imgBoy" />
+              </div>
+              <div class="col-8 text-start">
+                <h3>Nur Annisa Rahman</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dignissimos velit nemo minus.
+                </p>
+                <p>
+                  Putra dari Bpk Haikal <br />
+                  & <br />
+                  Ibu Citra
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-10 text-center"></div>
+          <h2>Informasi Acara</h2>
+          <p class="alamat">
+            Alamat: Hotel Claro Aula II, <br />Jl. Andi Pettarani, Kec.
+            Rappocini, Kota Makassar, Sulawesi Selatan
+          </p>
+          <a
+            href="https://maps.app.goo.gl/jE4gvMRzT8jygRsD9"
+            target="_blank"
+            class="btn btn-light btn-sm my-2 mx-auto"
+            >Lokasi Acara</a
+          >
+          <p class="description">
+            Diharapkan untuk tidak salah alamat dan tanggal, saat anda sampai
+            ditujuan namun tidak ada tanda-tanda sedang dilangsungkan
+            pernikahan, bisa jadi anda salah jadwal atau salah tempat.
+          </p>
+        </div>
+
+        <div class="row mt-4 my-2 mx-auto justify-content-center g-4">
+          <div class="col-md-5 col-10 text-center">
+            <div class="card text-center text-bg-light">
+              <div class="card-header">Akad Nikah</div>
+              <div class="card-body d-flex">
+                <div class="row justify-content-center"></div>
+                <div class="icon col-md-6">
+                  <i class="bi bi-clock-fill d-block"></i>
+                  <p>08:00 WITA</p>
+                </div>
+                <div class="icon col-md-6">
+                  <i class="bi bi-calendar-heart d-block"></i>
+                  <p>Minggu, 28 January 2026</p>
+                </div>
+              </div>
+              <div class="card-footer">Dihadiri oleh Keluarga / Kerabat</div>
+            </div>
+          </div>
+
+          <div class="col-md-5 col-10 text-center">
+            <div class="card text-center text-bg-light mt-5">
+              <div class="card-header">Resepsi</div>
+              <div class="card-body d-flex">
+                <div class="row justify-content-center"></div>
+                <div class="icon col-md-6">
+                  <i class="bi bi-clock-fill d-block"></i>
+                  <p>11:00 WITA</p>
+                </div>
+                <div class="icon col-md-6">
+                  <i class="bi bi-calendar-heart d-block"></i>
+                  <p>Minggu, 28 January 2026</p>
+                </div>
+              </div>
+              <div class="card-footer">Dihadiri oleh Tamu Undangan</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="story" class="story">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center"></div>
+          <span>Bagaimana Cinta Kami Bersemi</span>
+          <h2>Cerita Kami</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            velit nemo minus, beatae cumque aperiam laboriosam unde possimus
+            quisquam repellendus!
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <ul class="timeline">
+              <li>
+                <div
+                  class="timeline-img"
+                  style="background-image: url('img/gambar3.jpeg')"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Pertama Bertemu</h3>
+                    <span>10 January 2024</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p style="margin: auto">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Distinctio nobis perferendis porro quia!
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div
+                  class="timeline-img"
+                  style="background-image: url('img/gambar9.jpeg')"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Saling Mengenal</h3>
+                    <span>10 January 2024</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p style="margin: auto">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Distinctio nobis perferendis porro quia!
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="timeline-img"
+                  style="background-image: url('img/gambar11.jpeg')"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Mengukir Kisah</h3>
+                    <span>10 January 2024</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p style="margin: auto">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Distinctio nobis perferendis porro quia!
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div
+                  class="timeline-img"
+                  style="background-image: url('img/gambar7.jpeg')"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Jenjang Serius</h3>
+                    <span>10 January 2024</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p style="margin: auto">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Distinctio nobis perferendis porro quia!
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Galery Kami</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos velit nemo minus, beatae cumque aperiam laboriosam
+              unde possimus quisquam repellendus!
+            </p>
+          </div>
+        </div>
+
+        <div class="row row-cols-md-4 row-cols-sm-3 row-cols-2 g-3">
+          <div class="col mt-3">
+            <a
+              href="img/gallery/gambar1.jpeg"
+              data-toggle="lightbox"
+              data-caption="Foto Pasangan"
+              data-gallery="mygallery"
+            >
+              <img
+                src="img/gallery/gambar9.jpeg"
+                alt="Foto Pasangan"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="img/gallery/gambar11.jpeg"
+              data-toggle="lightbox"
+              data-caption="Foto Pasangan"
+              data-gallery="mygallery"
+            >
+              <img
+                src="img/gallery/gambar11.jpeg"
+                alt="Foto Pasangan"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="img/gallery/gambar1.jpeg"
+              data-toggle="lightbox"
+              data-caption="Foto Pasangan"
+              data-gallery="mygallery"
+            >
+              <img
+                src="img/gallery/gambar9.jpeg"
+                alt="Foto Pasangan"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="img/gallery/gambar1.jpeg"
+              data-toggle="lightbox"
+              data-caption="Foto Pasangan"
+              data-gallery="mygallery"
+            >
+              <img
+                src="img/gallery/gambar9.jpeg"
+                alt="Foto Pasangan"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="img/gallery/gambar1.jpeg"
+              data-toggle="lightbox"
+              data-caption="Foto Pasangan"
+              data-gallery="mygallery"
+            >
+              <img
+                src="img/gallery/gambar9.jpeg"
+                alt="Foto Pasangan"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="img/gallery/gambar1.jpeg"
+              data-toggle="lightbox"
+              data-caption="Foto Pasangan"
+              data-gallery="mygallery"
+            >
+              <img
+                src="img/gallery/gambar9.jpeg"
+                alt="Foto Pasangan"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      document.querySelectorAll(".offcanvas .nav-link").forEach((link) => {
+        link.addEventListener("click", function () {
+          const offcanvasEl = document.querySelector(".offcanvas.show");
+          if (offcanvasEl) {
+            const offcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
+            offcanvas.hide();
+          }
+        });
+      });
+    </script>
+
+    <!-- lightbox untuk galery -->
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.5/dist/index.bundle.min.js"></script>
+
+    <!-- Saat di scroll akan menuju menu paling atas -->
+    <script>
+      window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+      };
+    </script>
+
+    <script>
+      function disableScroll() {
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+        window.onscroll = function () {
+          window.scrollTo(scrollLeft, scrollTop);
+        };
+
+        const rootElement = document.querySelector(":root");
+        rootElement.style.scrollBehavior = "auto";
+      }
+
+      function enableScroll() {
+        window.onscroll = function () {
+          const rootElement = document.querySelector(":root");
+          rootElement.style.scrollBehavior = "smooth";
+        };
+      }
+
+      disableScroll();
+    </script>
+
+    <script>
+      simplyCountdown(".countdown", {
+        year: 2026, // Target year (required)
+        month: 1, // Target month [1-12] (required)
+        day: 28, // Target day [1-31] (required)
+        hours: 0, // Target hour [0-23], default: 0
+        minutes: 0, // Target minute [0-59], default: 0
+        seconds: 0, // Target second [0-59], default: 0
+        words: {
+          // Custom labels, with lambda for plurals
+          days: {
+            root: "day",
+            lambda: (root, n) => (n > 1 ? root + "s" : root),
+          },
+          hours: {
+            root: "hour",
+            lambda: (root, n) => (n > 1 ? root + "s" : root),
+          },
+          minutes: {
+            root: "minute",
+            lambda: (root, n) => (n > 1 ? root + "s" : root),
+          },
+          seconds: {
+            root: "second",
+            lambda: (root, n) => (n > 1 ? root + "s" : root),
+          },
+        },
+        plural: true, // Use plurals for labels
+        inline: false, // Inline format: e.g., "24 days, 4 hours, 2 minutes"
+        inlineSeparator: ", ", // Separator for inline format, default: ", "
+        inlineClass: "simply-countdown-inline", // CSS class for inline countdown
+        enableUtc: false, // Use UTC time if true
+        refresh: 1000, // Refresh interval in ms, default: 1000
+        sectionClass: "simply-section", // CSS class for each countdown section
+        amountClass: "simply-amount", // CSS class for numeric values
+        wordClass: "simply-word", // CSS class for unit labels
+        zeroPad: false, // Pad numbers with leading zero
+        removeZeroUnits: false, // Remove units with zero value
+        countUp: false, // Count up after reaching zero
+        onEnd: () => {}, // Callback when countdown ends
+        onStop: () => {}, // Callback when countdown is stopped
+        onResume: () => {}, // Callback when countdown is resumed
+        onUpdate: (params) => {}, // Callback when countdown is updated
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,462 @@
+:root {
+  --red: #661e2a;
+  --bg: #010101;
+  --blue: #c3e2ff;
+  --shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Rubik", sans-serif;
+  min-height: 6000px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/gambar10.jpg") no-repeat center center/cover;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.hero h1 {
+  font-family: "Sacramento", cursive;
+  font-size: 5rem;
+  text-shadow: #010101 2px 2px 4px;
+  margin-top: 5rem;
+}
+
+.hero h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-shadow: #010101 2px 2px 4px;
+  margin-top: 3rem;
+}
+
+.hero p {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  text-shadow: #010101 2px 2px 4px;
+}
+
+.hero a {
+  color: var(--red);
+  background-color: white;
+  margin-top: 5rem;
+  border-radius: 30px;
+  border: 1px solid var(--red);
+}
+
+.hero a:hover {
+  background-color: var(--red);
+  color: white;
+}
+
+/* My Navbar */
+.mynavbar {
+  background-color: rgba(255, 255, 255, 0.4) !important;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(4px);
+}
+
+.mynavbar .offcanvas {
+  height: 100vh;
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+  font-family: "Sacramento", cursive;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+.mynavbar .nav-link {
+  /* font-weight: 500; */
+  text-transform: uppercase;
+}
+
+.home {
+  background-image: url("../img/cloud3.jpg");
+  background-color: var(--blue);
+  top: 0;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  margin-top: -6.5rem;
+  padding-top: 10rem;
+  padding-bottom: 3rem;
+}
+
+.home .row {
+  justify-content: center;
+  text-align: center;
+}
+
+.home h2,
+.story h2 {
+  font-family: "Sacramento", cursive;
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--red);
+  margin-bottom: 1rem;
+}
+
+.home h3 {
+  color: #2b2a2a;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.home p {
+  font-size: 1.1rem;
+  color: #2b2a2a;
+}
+
+.home .couple {
+  margin-top: 40px;
+}
+
+.home .couple h3 {
+  font-family: "Sacramento";
+  font-size: 2.4rem;
+  color: var(--red);
+}
+
+.home .couple img {
+  width: 100%;
+  border-radius: 30px;
+}
+
+.home .heart {
+  width: 50px;
+  height: 50px;
+  background-color: var(--red);
+  display: flex;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  margin: auto;
+  position: absolute;
+  transform: translateY(100px);
+}
+
+.home .heart i {
+  color: white;
+  margin: auto;
+}
+
+.info {
+  background-color: var(--bg);
+  background-image: url("../img/cloud4.jpg");
+  background-size: cover;
+  color: white;
+  padding: 5rem 0;
+  text-align: center;
+  justify-content: center;
+}
+
+.info h2 {
+  font-family: "Sacramento", cursive;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: white;
+  box-shadow: white 0 2px 10px;
+  padding: 1rem;
+}
+
+.info .alamat {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.info .btn {
+  display: flex;
+  border-radius: 30px;
+  width: 150px;
+  justify-content: center;
+  border: 1px solid white;
+  color: white;
+  box-shadow: white 0 2px 10px;
+  background-color: transparent;
+}
+
+.info .description {
+  padding: 0 7rem;
+  font-size: 1rem;
+  font-weight: 200;
+  margin-top: 1rem;
+  color: #eee;
+}
+
+.info .card {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  box-shadow: white 0 2px 10px;
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  border: 1px solid white;
+  padding: 1rem;
+  color: white !important;
+}
+
+.info .card-header {
+  border-bottom: 1px solid white;
+  font-family: "Sacramento", cursive;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+.info .card-body {
+  font-size: 1rem;
+}
+
+.info .card-footer {
+  border-top: 1px solid white;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.story {
+  background-image: url("../img/cloud1.jpg");
+  background-size: cover;
+  background-position: center;
+  bottom: 0;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  text-align: center;
+}
+
+.story span {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #2b2a2a;
+  letter-spacing: 1px;
+}
+
+.story p {
+  font-size: 1.1rem;
+  font-weight: 200;
+  width: 80%;
+  color: #2b2a2a;
+  margin-bottom: 1rem;
+}
+
+.timeline {
+  list-style: none;
+  padding: 1.4rem 0;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.timeline::before {
+  content: "";
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  width: 1px;
+  background-color: var(--red);
+  left: 50%;
+  margin-left: -1px;
+}
+
+.timeline li {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.timeline li::before,
+.timeline li::after {
+  content: "";
+  display: table;
+}
+
+.timeline li::after {
+  clear: both;
+}
+
+.timeline li .timeline-img {
+  width: 160px;
+  height: 160px;
+  background-color: var(--red);
+  position: absolute;
+  left: 50%;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.timeline li .timeline-panel {
+  width: 39%;
+  float: left;
+  background-color: var(--blue);
+  border: 1px solid #d4d4d4;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  padding: 1rem;
+  position: relative;
+  margin-left: 1rem;
+}
+
+.timeline li .timeline-panel::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-top: 15px solid transparent;
+  border-left: 15px solid var(--blue);
+  border-bottom: 15px solid transparent;
+  border-right: 0 solid var(--blue);
+  top: 70px;
+  right: -15px;
+}
+
+.timeline li.timeline-inverted .timeline-panel {
+  float: right;
+  margin-right: 1rem;
+  margin-left: 0;
+}
+
+.timeline li.timeline-inverted .timeline-panel::before {
+  left: -15px;
+  right: auto;
+  border-left-width: 0;
+  border-right-width: 15px;
+}
+
+.timeline li.timeline-inverted .timeline-panel::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  border-top: 15px solid transparent;
+  border-right: 15px solid var(--blue);
+  border-bottom: 15px solid transparent;
+  border-left: 0 solid var(--blue);
+  top: 70px;
+  left: -14px;
+}
+
+.gallery {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  text-align: center;
+  background-color: var(--blue);
+}
+
+.gallery h2 {
+  font-family: "Sacramento", cursive;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: var(--red);
+  padding: 1rem;
+}
+
+/* Media Query */
+/* Extra Large */
+@media (max-width: 1200px) {
+  .home .heart {
+    transform: translateY(80px);
+  }
+}
+
+/* Laptop */
+@media (max-width: 992px) {
+  html {
+    font-size: 75%;
+  }
+
+  .home .heart {
+    display: none;
+  }
+
+  .timeline::before {
+    left: 60px;
+  }
+
+  .timeline li .timeline-img {
+    left: 15px;
+    margin-left: 45px;
+    top: 16px;
+  }
+
+  .timeline li .timeline-panel {
+    width: calc(100% - 200px);
+    float: right;
+    margin: 26px 20px;
+  }
+
+  .timeline li .timeline-panel::before {
+    left: -15px;
+    right: auto;
+    border-left-width: 0;
+    border-right-width: 15px;
+    top: 50px;
+  }
+  .timeline li.timeline-inverted .timeline-panel::before {
+    top: 50px;
+  }
+
+  .timeline li .timeline-panel::after {
+    left: -13px;
+    right: auto;
+    border-left-width: 0;
+    border-right-width: 14px;
+    top: 71px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 70%;
+  }
+
+  .mynavbar .nav-link {
+    /* font-weight: 500; */
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 1.5rem;
+  }
+
+  .mynavbar .offcanvas {
+    width: 70% !important;
+  }
+
+  .mynavbar {
+    overflow-x: clip;
+  }
+
+  .info .card-body {
+    font-size: 1.5rem;
+    justify-content: center;
+  }
+
+  .info .card-body .icon {
+    margin: 0 auto;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 576px) {
+  html {
+    font-size: 65%;
+  }
+}
