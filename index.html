@@ -82,7 +82,7 @@
               <a class="nav-link" href="#info">Info</a>
               <a class="nav-link" href="#story">Story</a>
               <a class="nav-link" href="#gallery">Gallery</a>
-              <a class="nav-link" href="#rsvp">Reservasi</a>
+              <a class="nav-link" href="#rsvp">RSVP</a>
               <a class="nav-link" href="#gift">Gifts</a>
               <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
             </div>
@@ -152,6 +152,8 @@
       </div>
     </section>
 
+
+    <!-- info -->
     <section id="info" class="info">
       <div class="container">
         <div class="row">
@@ -214,6 +216,7 @@
       </div>
     </section>
 
+    <!-- story -->
     <section id="story" class="story">
       <div class="container">
         <div class="row justify-content-center">
@@ -308,6 +311,8 @@
       </div>
     </section>
 
+
+    <!-- gallery -->
     <section id="gallery" class="gallery">
       <div class="container">
         <div class="row justify-content-center">
@@ -410,6 +415,113 @@
       </div>
     </section>
 
+    <!-- RSVP -->
+    <section class="bgrsvpgift">
+      <section id="rsvp" class="rsvp">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8 col-10 text-center">
+              <h2>Konfirmasi Kehadiran</h2>
+              <p>
+                Isi Form di bawah ini untuk melakukan konfirmasi kehadiran!
+              </p> 
+            </div>
+
+          </div>
+          <form class="row row-cols-md-auto g-3 align-items-center justify-content-center"
+          method="POST" 
+          action="https://script.google.com/macros/s/AKfycbz40bvybY69orjYHCtqYK5muV-H1QaaJ-aAel5_I3QuVpqA7iPEz41jEf2ZYQnM7naICA/exec" id="my-form">
+            <div class="col-12">
+              <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama anda">
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="mb-3">
+              <label for="jumlah_hadir" class="form-label">Jumlah Hadir</label>
+              <input type="number" class="form-control" id="jumlah_hadir" name="jumlah_hadir" 
+              min="1" max="5" length="1" value="1">
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="mb-3">
+              <label for="status" class="form-label">Konfirmasi</label>
+              <select name="status" id="status" class="form-select">
+                <option selected>Pilih salah satu</option>
+                <option value="hadir">Akan Hadir</option>
+                <option value="tidak_hadir">Tidak Bisa Hadir</option>
+              </select>
+              </div>
+            </div>
+            <div class="col-12">
+              <button class="btn-kirim"> 
+                Kirim
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- gift -->
+      <section id="gift" class="gift">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8 col-10 text-center">
+              <h2>Hadiah Pernikahan</h2>
+              <p>
+                Doa restu Anda adalah hadiah terindah bagi kami. Namun, jika Anda
+                berkeinginan untuk memberikan hadiah, kami telah menyiapkan beberapa opsi
+                di bawah ini:
+              </p>
+            </div>
+          </div>
+          <div class="row justify-content-center g-4">
+            <div class="col-md-4 col-10 text-center">
+              <div class="card text-center text-bg-light">
+                <div class="card-body">
+                  <h3>Transfer Bank</h3>
+                  <p>Bank Central Asia (BCA)</p>
+                  <p class="teks-disalin">123-456-7890 <i class="bi bi-copy btn-salin"></i></p>
+                  <p><span>a/n Muhammad Naufal</span></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-10 text-center">
+              <div class="card text-center text-bg-light">
+                <div class="card-body">
+                  <h3>E-Wallet</h3>
+                  <p>OVO Top-Up</p>
+                  <p class="teks-disalin">0812-3456-7890 <i class="bi bi-copy btn-salin"></i></p>
+                  <p><span>a/n Nur Annisa Rahman</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <small class="d-block">&copy; 2026 Naufal&Nisa Wedding. All Rights Reserved.</small>
+            <small class="d-block">Design By <a href="https://instagram.com/its.dhea25">@its.dhea25</a></small>
+
+            <ul>
+              <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+              <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+              <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+              <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+              <li><a href="#"><i class="bi bi-github"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
@@ -506,5 +618,40 @@
         onUpdate: (params) => {}, // Callback when countdown is updated
       });
     </script>
+
+    <!-- salin js -->
+    <script>
+      document.querySelectorAll('.btn-salin').forEach(btn => {
+        btn.addEventListener('click', function () {
+          const teks = this.parentElement.innerText.replace(/\s+/g, ' ').trim();
+
+          navigator.clipboard.writeText(teks).then(() => {
+            alert('Teks berhasil disalin!');
+          }).catch(err => {
+            console.error('Gagal menyalin:', err);
+          });
+        });
+      });
+    </script>
+
+
+    <!-- Spreedsheet Js -->
+     <script>
+      window.addEventListener("load", function() {
+        const form = document.getElementById('my-form');
+        form.addEventListener("submit", function(e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+          fetch(action, {
+            method: 'POST',
+            body: data,
+          })
+          .then(() => {
+            alert("Konfirmasi Kehadiran Berhasil!");
+          })
+        });
+      });
+     </script>
   </body>
 </html>

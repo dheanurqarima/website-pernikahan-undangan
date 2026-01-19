@@ -354,10 +354,13 @@ body {
 }
 
 .gallery {
+  background-image: url("../img/cloud6.jpg");
+  background-size: cover;
+  background-position: center;
+  bottom: 0;
   padding-top: 8rem;
   padding-bottom: 8rem;
   text-align: center;
-  background-color: var(--blue);
 }
 
 .gallery h2 {
@@ -367,6 +370,150 @@ body {
   margin-bottom: 2rem;
   color: var(--red);
   padding: 1rem;
+}
+
+.bgrsvpgift {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  background-color: var(--bg);
+  background-image: url("../img/cloud4.jpg");
+  background-size: cover;
+}
+
+.rsvp {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.rsvp h2 {
+  font-family: "Sacramento", cursive;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: white;
+  box-shadow: white 0 2px 10px;
+  padding: 1rem;
+}
+
+.rsvp p {
+  font-size: 1.1rem;
+  font-weight: 200;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.rsvp form label {
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 500;
+  left: 1rem;
+}
+
+.rsvp form input #nama {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.rsvp form input #jumlah_hadir {
+  width: 50px;
+  border-radius: 10px;
+}
+
+.rsvp button {
+  background-color: var(--red);
+  border: 1px solid var(--red);
+  border-radius: 10px;
+  color: white;
+  padding: 0.5rem 1rem;
+  box-shadow: white 0 2px 10px;
+  margin-top: 13px;
+}
+
+.gift {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.gift h2 {
+  font-family: "Sacramento", cursive;
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: white;
+  box-shadow: white 0 2px 10px;
+  padding: 1rem;
+}
+
+.gift p {
+  font-size: 1.1rem;
+  font-weight: 200;
+  color: white;
+  margin: 2rem auto;
+}
+
+.gift .card {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  box-shadow: white 0 2px 10px;
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  border: 1px solid white;
+  padding: 1rem;
+  color: white !important;
+}
+
+.gift .card h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+}
+
+.gift .card p {
+  font-size: 1.2rem;
+  margin: 0.5rem;
+}
+
+.gift .card span {
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+}
+
+.gift .card i {
+  cursor: pointer;
+}
+
+footer {
+  background-color: var(--red);
+  color: white;
+  text-align: center;
+  padding: 3rem;
+  font-size: 1rem;
+  box-shadow: var(--shadow);
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: var(--blue);
+}
+
+footer ul {
+  display: flex;              /* aktifkan flex */
+  justify-content: center;    /* center horizontal */
+  align-items: center;        /* center vertikal */
+  gap: 1rem;                  /* jarak antar icon */
+  padding: 0;
+  margin-top: 1rem;
+}
+
+footer li {
+  list-style: none;
 }
 
 /* Media Query */
