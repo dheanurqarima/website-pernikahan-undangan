@@ -30,21 +30,27 @@ body {
   display: flex;
   text-align: center;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
 }
 
 .hero h1 {
   font-family: "Sacramento", cursive;
   font-size: 5rem;
   text-shadow: #010101 2px 2px 4px;
-  margin-top: 5rem;
+  margin-top: 6rem;
 }
 
 .hero h4 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
   text-shadow: #010101 2px 2px 4px;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
+}
+
+.hero h4 span {
+  font-size: 2rem;
+  display: block;
+  margin-top: 2.5rem;
 }
 
 .hero p {
@@ -56,7 +62,7 @@ body {
 .hero a {
   color: var(--red);
   background-color: white;
-  margin-top: 5rem;
+  margin-top: 2rem;
   border-radius: 30px;
   border: 1px solid var(--red);
 }
@@ -97,8 +103,8 @@ body {
   background-position: center;
   min-height: 100vh;
   margin-top: -6.5rem;
-  padding-top: 10rem;
-  padding-bottom: 3rem;
+  padding-top: 8rem;
+  padding-bottom: 2rem;
 }
 
 .home .row {
@@ -112,12 +118,12 @@ body {
   font-size: 4rem;
   font-weight: bold;
   color: var(--red);
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .home h3 {
   color: #2b2a2a;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
 }
@@ -128,7 +134,7 @@ body {
 }
 
 .home .couple {
-  margin-top: 40px;
+  margin-top: 4rem;
 }
 
 .home .couple h3 {
@@ -164,7 +170,7 @@ body {
   background-image: url("../img/cloud4.jpg");
   background-size: cover;
   color: white;
-  padding: 5rem 0;
+  padding: 8rem 0;
   text-align: center;
   justify-content: center;
 }
@@ -233,7 +239,8 @@ body {
 }
 
 .story {
-  background-image: url("../img/cloud1.jpg");
+  /* background-image: url("../img/cloud1.jpg"); */
+  background-color: #ccabab;
   background-size: cover;
   background-position: center;
   bottom: 0;
@@ -255,7 +262,7 @@ body {
   font-weight: 200;
   width: 80%;
   color: #2b2a2a;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .timeline {
@@ -263,6 +270,23 @@ body {
   padding: 1.4rem 0;
   position: relative;
   margin-top: 1rem;
+}
+
+.story .heart {
+  width: 50px;
+  height: 50px;
+  background-color: var(--red);
+  display: flex;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  margin: auto;
+  position: absolute;
+  transform: translateY(100px);
+}
+
+.home .heart i {
+  color: white;
+  margin: auto;
 }
 
 .timeline::before {
@@ -277,6 +301,7 @@ body {
 }
 
 .timeline li {
+  margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   position: relative;
 }
@@ -307,23 +332,38 @@ body {
 .timeline li .timeline-panel {
   width: 39%;
   float: left;
-  background-color: var(--blue);
-  border: 1px solid #d4d4d4;
+  background-color: var(--red);
+  border: 1px solid var(--red);
   border-radius: 10px;
   box-shadow: var(--shadow);
   padding: 1rem;
   position: relative;
   margin-left: 1rem;
+  color: white;
 }
+
+.timeline .timeline-heading h3 {
+  font-family: "Sacramento", cursive;
+  font-size: 2.5rem;
+}
+
+.timeline .timeline-heading span{
+  color: white;
+}
+
+.timeline .timeline-body p{
+  color: white;
+}
+
 
 .timeline li .timeline-panel::before {
   content: "";
   display: inline-block;
   position: absolute;
   border-top: 15px solid transparent;
-  border-left: 15px solid var(--blue);
+  border-left: 15px solid var(--red);
   border-bottom: 15px solid transparent;
-  border-right: 0 solid var(--blue);
+  border-right: 0 solid var(--red);
   top: 70px;
   right: -15px;
 }
@@ -346,15 +386,16 @@ body {
   display: inline-block;
   position: absolute;
   border-top: 15px solid transparent;
-  border-right: 15px solid var(--blue);
+  border-right: 15px solid var(--red);
   border-bottom: 15px solid transparent;
-  border-left: 0 solid var(--blue);
+  border-left: 0 solid var(--red);
   top: 70px;
   left: -14px;
 }
 
 .gallery {
-  background-image: url("../img/cloud6.jpg");
+  /* background-image: url("../img/cloud6.jpg"); */
+  background-color: #ccabab;
   background-size: cover;
   background-position: center;
   bottom: 0;
@@ -370,6 +411,12 @@ body {
   margin-bottom: 2rem;
   color: var(--red);
   padding: 1rem;
+}
+
+.gallery .container .row .album img {
+  border-radius: 20px;
+  border: 1px solid var(--red);
+  box-shadow: var(--red) 0 2px 4px;
 }
 
 .bgrsvpgift {
@@ -526,7 +573,7 @@ footer li {
   color: var(--red);
   cursor: pointer;
   z-index: 1000;
-  mix-blend-mode: difference;
+  /* mix-blend-mode: difference; */
   animation: rotating 4s linear infinite;
   display: flex;
   justify-content: center;
@@ -618,6 +665,10 @@ footer li {
 
   .mynavbar {
     overflow-x: clip;
+  }
+  
+  .home .couple .wanita {
+    padding-top: 3rem;
   }
 
   .info .card-body {
