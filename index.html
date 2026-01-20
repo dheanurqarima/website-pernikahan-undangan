@@ -522,6 +522,15 @@
       </div>
     </footer>
 
+    <div id="audio-container">
+      <audio id="sound" autoplay loop>
+        <source src="audio/kota ini tak sama tanpamu.mp3" type="audio/mp3">
+      </audio>
+      <div class="audio-icon" style="display: none;">
+        <i class="bi bi-disc" id="icon-audio"></i>
+      </div>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
@@ -551,6 +560,12 @@
     </script>
 
     <script>
+      const rootElement = document.querySelector(":root");
+      const audioIcon = document.querySelector(".audio-icon");
+      const audioIconPause = document.querySelector(".audio-icon i");
+      const sound = document.querySelector("#sound");
+      let isPlaying = false;
+      let userPaused = false;
       function disableScroll() {
         scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
@@ -560,15 +575,39 @@
         };
 
         const rootElement = document.querySelector(":root");
-        rootElement.style.scrollBehavior = "auto";
+        rootElement.style.scrollBehavior = "smooth";
       }
 
       function enableScroll() {
         window.onscroll = function () {
-          const rootElement = document.querySelector(":root");
           rootElement.style.scrollBehavior = "smooth";
+          if (!userPaused && !isPlaying) {
+            playAudio();
+          }
         };
       }
+
+      function playAudio() {
+        sound.volume = 0.1;
+        audioIcon.style.display = "flex";
+        sound.play();
+        isPlaying = true;
+      }
+
+      audioIcon.onclick = function () {
+        if (isPlaying) {
+          sound.pause();
+          userPaused = true;
+          audioIconPause.classList.remove("bi-disc");
+          audioIconPause.classList.add("bi-pause-circle");
+        } else {
+          sound.play();
+          userPaused = false;
+          audioIconPause.classList.add("bi-disc");
+          audioIconPause.classList.remove("bi-pause-circle");
+        }
+        isPlaying = !isPlaying;
+      };
 
       disableScroll();
     </script>
