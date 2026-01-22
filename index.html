@@ -335,13 +335,13 @@
         <div class="row row-cols-md-4 row-cols-sm-3 row-cols-2 g-3">
           <div class="album col mt-3">
             <a
-              href="img/gallery/gambar1.jpeg"
+              href="img/gallery/gambar16.jpeg"
               data-toggle="lightbox"
               data-caption="Foto Pasangan"
               data-gallery="mygallery"
             >
               <img
-                src="img/gallery/gambar9.jpeg"
+                src="img/gallery/gambar14.jpeg"
                 alt="Foto Pasangan"
                 class="img-fluid w-100 rounded"
               />
@@ -349,13 +349,13 @@
           </div>
           <div class="album col mt-3">
             <a
-              href="img/gallery/gambar11.jpeg"
+              href="img/gallery/gambar14.jpeg"
               data-toggle="lightbox"
               data-caption="Foto Pasangan"
               data-gallery="mygallery"
             >
               <img
-                src="img/gallery/gambar11.jpeg"
+                src="img/gallery/gambar16.jpeg"
                 alt="Foto Pasangan"
                 class="img-fluid w-100 rounded"
               />
@@ -363,13 +363,13 @@
           </div>
           <div class="album col mt-3">
             <a
-              href="img/gallery/gambar1.jpeg"
+              href="img/gallery/prewedding.avif"
               data-toggle="lightbox"
               data-caption="Foto Pasangan"
               data-gallery="mygallery"
             >
               <img
-                src="img/gallery/gambar9.jpeg"
+                src="img/gallery/prewedding1.avif"
                 alt="Foto Pasangan"
                 class="img-fluid w-100 rounded"
               />
@@ -377,13 +377,13 @@
           </div>
           <div class="album col mt-3">
             <a
-              href="img/gallery/gambar1.jpeg"
+              href="img/gallery/prewedding1.avif"
               data-toggle="lightbox"
               data-caption="Foto Pasangan"
               data-gallery="mygallery"
             >
               <img
-                src="img/gallery/gambar9.jpeg"
+                src="img/gallery/prewedding.avif"
                 alt="Foto Pasangan"
                 class="img-fluid w-100 rounded"
               />
@@ -391,13 +391,13 @@
           </div>
           <div class="album col mt-3">
             <a
-              href="img/gallery/gambar1.jpeg"
+              href="img/gallery/prewedding2.avif"
               data-toggle="lightbox"
               data-caption="Foto Pasangan"
               data-gallery="mygallery"
             >
               <img
-                src="img/gallery/gambar9.jpeg"
+                src="img/gallery/prewedding3.avif"
                 alt="Foto Pasangan"
                 class="img-fluid w-100 rounded"
               />
@@ -405,17 +405,28 @@
           </div>
           <div class="album col mt-3">
             <a
-              href="img/gallery/gambar1.jpeg"
+              href="img/gallery/prewedding3.avif"
               data-toggle="lightbox"
               data-caption="Foto Pasangan"
               data-gallery="mygallery"
             >
               <img
-                src="img/gallery/gambar9.jpeg"
+                src="img/gallery/prewedding2.avif"
                 alt="Foto Pasangan"
                 class="img-fluid w-100 rounded"
               />
             </a>
+          </div>
+          <!-- Figure autoscroll -->
+          <div class="gallery-container">
+            <div class="gallery-track" id="gallery">
+              <img src="img/gallery/prewedding.avif" />
+              <img src="img/gallery/prewedding1.avif" />
+              <img src="img/gallery/prewedding2.avif" />
+              <img src="img/gallery/prewedding3.avif" />
+              <img src="img/gallery/prewedding4.avif" />
+              <img src="img/gallery/prewedding.avif" />
+            </div>
           </div>
         </div>
       </div>
@@ -615,7 +626,7 @@
         isPlaying = !isPlaying;
       };
 
-      disableScroll();
+      // disableScroll();
     </script>
 
     <script>
@@ -709,6 +720,18 @@
       namaTamu.innerText = nama;
 
       document.querySelector("#nama").value = nama;
+    </script>
+
+    <!-- figure autoscroll -->
+    <script>
+      const gallery = document.getElementById("gallery");
+      const total = gallery.children.length;
+      let index = 0;
+
+      setInterval(() => {
+        index = (index + 1) % total;
+        gallery.style.transform = `translateX(-${index * 100}%)`;
+      }, 3000);
     </script>
   </body>
 </html>
